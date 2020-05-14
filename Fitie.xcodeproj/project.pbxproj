@@ -13,7 +13,8 @@
 		FF2F39D62467A3910029EC6F /* AboutUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2F39D42467A3910029EC6F /* AboutUs.storyboard */; };
 		FF2F39D82467A3920029EC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF2F39D72467A3920029EC6F /* Assets.xcassets */; };
 		FF2F39DB2467A3920029EC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2F39D92467A3920029EC6F /* LaunchScreen.storyboard */; };
-		FF52B7B62467EF9300487240 /* absPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52B7B52467EF9300487240 /* absPopOverViewController.swift */; };
+		FF46B111246D717700BA7CC7 /* ReportTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF46B110246D717700BA7CC7 /* ReportTimelineTableViewCell.swift */; };
+		FF52B7B62467EF9300487240 /* AbsPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF52B7B52467EF9300487240 /* AbsPopOverViewController.swift */; };
 		FF6EC2E92467AD5600D5151F /* WorkoutAbs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EC2E82467AD5600D5151F /* WorkoutAbs.storyboard */; };
 		FF6EC2EB2467ADC800D5151F /* WorkoutAbsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EC2EA2467ADC800D5151F /* WorkoutAbsViewController.swift */; };
 		FF6EC2ED2467AEB800D5151F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EC2EC2467AEB800D5151F /* Main.storyboard */; };
@@ -34,7 +35,8 @@
 		FF2F39D72467A3920029EC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF2F39DA2467A3920029EC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF2F39DC2467A3920029EC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF52B7B52467EF9300487240 /* absPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = absPopOverViewController.swift; sourceTree = "<group>"; };
+		FF46B110246D717700BA7CC7 /* ReportTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTimelineTableViewCell.swift; sourceTree = "<group>"; };
+		FF52B7B52467EF9300487240 /* AbsPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsPopOverViewController.swift; sourceTree = "<group>"; };
 		FF6EC2E82467AD5600D5151F /* WorkoutAbs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorkoutAbs.storyboard; sourceTree = "<group>"; };
 		FF6EC2EA2467ADC800D5151F /* WorkoutAbsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAbsViewController.swift; sourceTree = "<group>"; };
 		FF6EC2EC2467AEB800D5151F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -148,7 +150,7 @@
 			children = (
 				FF6EC2EA2467ADC800D5151F /* WorkoutAbsViewController.swift */,
 				FFDD5F702467C06D001F709D /* WorkoutAbsTableViewCell.swift */,
-				FF52B7B52467EF9300487240 /* absPopOverViewController.swift */,
+				FF52B7B52467EF9300487240 /* AbsPopOverViewController.swift */,
 			);
 			path = WorkoutAbs;
 			sourceTree = "<group>";
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				FF6EC2F62467B6E600D5151F /* ReportTimelineViewController.swift */,
+				FF46B110246D717700BA7CC7 /* ReportTimelineTableViewCell.swift */,
 			);
 			path = ReportTimeline;
 			sourceTree = "<group>";
@@ -244,8 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF46B111246D717700BA7CC7 /* ReportTimelineTableViewCell.swift in Sources */,
 				FF6EC2EB2467ADC800D5151F /* WorkoutAbsViewController.swift in Sources */,
-				FF52B7B62467EF9300487240 /* absPopOverViewController.swift in Sources */,
+				FF52B7B62467EF9300487240 /* AbsPopOverViewController.swift in Sources */,
 				FF2F39D32467A3910029EC6F /* AboutUsViewController.swift in Sources */,
 				FF2F39CF2467A3910029EC6F /* AppDelegate.swift in Sources */,
 				FF2F39D12467A3910029EC6F /* SceneDelegate.swift in Sources */,

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class absPopOverViewController: UIViewController {
+class AbsPopOverViewController: UIViewController {
     
     @IBOutlet weak var exerciseImageView: UIImageView!
     

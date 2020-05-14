@@ -58,7 +58,7 @@ extension WorkoutAbsViewController: UITableViewDelegate, UITableViewDataSource {
             let storyboard = UIStoryboard(name: "WorkoutAbs", bundle: nil)
             
             let vc = storyboard.instantiateViewController(
-                withIdentifier: "absPopOver") as! absPopOverViewController
+                withIdentifier: "absPopOver") as! AbsPopOverViewController
             
             vc.exerciseImageString = self.exerciseImages[indexPath.row]
             vc.exerciseName = self.nameOfAllExercise[indexPath.row]

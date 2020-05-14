@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WKY-pL-jF0">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -13,15 +13,91 @@
             <objects>
                 <viewController storyboardIdentifier="ReportTimeline" title="Report Timeline" id="WKY-pL-jF0" customClass="ReportTimelineViewController" customModule="Fitie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8ub-pn-7hu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xj4-nK-bPg">
+                                <rect key="frame" x="0.0" y="104" width="375" height="674"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="reportTimelineCell" id="NyN-FN-4y0" customClass="ReportTimelineTableViewCell" customModule="Fitie" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="138.33332824707031"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NyN-FN-4y0" id="0fi-nq-UTd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="138.33332824707031"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morning Running" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="iuA-vo-IRa">
+                                                    <rect key="frame" x="15" y="19" width="225" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="qxC-Cg-79B"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.18 km in 20 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="NQt-bs-cqG">
+                                                    <rect key="frame" x="15" y="69" width="225" height="50.333333333333343"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="lMU-Ya-71T"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="running" translatesAutoresizingMaskIntoConstraints="NO" id="l6p-4y-nvQ">
+                                                    <rect key="frame" x="285" y="39.333333333333343" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="l6p-4y-nvQ" secondAttribute="height" multiplier="1:1" id="wQy-YY-pgg"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iuA-vo-IRa" firstAttribute="leading" secondItem="0fi-nq-UTd" secondAttribute="leadingMargin" id="92D-Kb-IHJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="l6p-4y-nvQ" secondAttribute="trailing" constant="15" id="9y8-XM-RLi"/>
+                                                <constraint firstItem="NQt-bs-cqG" firstAttribute="leading" secondItem="iuA-vo-IRa" secondAttribute="leading" id="E3g-dr-Eqm"/>
+                                                <constraint firstItem="l6p-4y-nvQ" firstAttribute="width" secondItem="0fi-nq-UTd" secondAttribute="width" multiplier="0.16" id="QmI-Wl-BwZ"/>
+                                                <constraint firstItem="NQt-bs-cqG" firstAttribute="top" secondItem="iuA-vo-IRa" secondAttribute="bottom" id="ccf-Fr-aQT"/>
+                                                <constraint firstItem="iuA-vo-IRa" firstAttribute="width" secondItem="0fi-nq-UTd" secondAttribute="width" multiplier="0.6" id="fOi-dT-tNK"/>
+                                                <constraint firstItem="iuA-vo-IRa" firstAttribute="top" secondItem="0fi-nq-UTd" secondAttribute="topMargin" constant="8" id="jHB-AU-dDq"/>
+                                                <constraint firstItem="NQt-bs-cqG" firstAttribute="leading" secondItem="0fi-nq-UTd" secondAttribute="leadingMargin" id="k76-3r-HNn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NQt-bs-cqG" secondAttribute="bottom" constant="8" id="l4D-pZ-L5l"/>
+                                                <constraint firstItem="l6p-4y-nvQ" firstAttribute="centerY" secondItem="0fi-nq-UTd" secondAttribute="centerY" id="mtM-l5-i6m"/>
+                                                <constraint firstItem="NQt-bs-cqG" firstAttribute="trailing" secondItem="iuA-vo-IRa" secondAttribute="trailing" id="oWL-Ng-Sj5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="reportTimelineActivityLabel" destination="iuA-vo-IRa" id="LEW-rY-JVF"/>
+                                            <outlet property="reportTimelineImageView" destination="l6p-4y-nvQ" id="Lva-vO-Lgy"/>
+                                            <outlet property="reportTimelineValueLabel" destination="NQt-bs-cqG" id="V5J-n6-fwX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JH7-9N-F9k" firstAttribute="bottom" secondItem="xj4-nK-bPg" secondAttribute="bottom" id="8tM-pN-vhH"/>
+                            <constraint firstItem="xj4-nK-bPg" firstAttribute="top" secondItem="JH7-9N-F9k" secondAttribute="top" constant="60" id="9nd-fk-yJJ"/>
+                            <constraint firstItem="xj4-nK-bPg" firstAttribute="leading" secondItem="JH7-9N-F9k" secondAttribute="leading" id="J7e-le-4EC"/>
+                            <constraint firstItem="JH7-9N-F9k" firstAttribute="trailing" secondItem="xj4-nK-bPg" secondAttribute="trailing" id="f0T-eW-gsa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JH7-9N-F9k"/>
                     </view>
+                    <connections>
+                        <outlet property="reportTimelineTableView" destination="xj4-nK-bPg" id="MdO-MB-Juo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQP-7f-QOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="147"/>
+            <point key="canvasLocation" x="128.80000000000001" y="145.56650246305421"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="running" width="29" height="43"/>
+    </resources>
 </document>

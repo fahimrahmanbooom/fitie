@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KyQ-za-cZe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="s5y-kb-T8N">
+            <objects>
+                <navigationController id="KyQ-za-cZe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bIs-Kd-HLo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PHI-T4-TwI" kind="relationship" relationship="rootViewController" id="Fgr-PL-JUJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cX-aF-wsg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-323" y="140"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="Ghq-9d-zbW">
+            <objects>
+                <viewController storyboardIdentifier="Demo" id="PHI-T4-TwI" customClass="DemoViewController" customModule="Fitie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aaf-JJ-ARf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fex-VO-fqv">
+                                <rect key="frame" x="107" y="132" width="200" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8a9-TY-Lpb"/>
+                                    <constraint firstAttribute="width" constant="200" id="AAC-Tc-iaK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="About Us"/>
+                                <connections>
+                                    <action selector="aboutUsButtonAction:" destination="PHI-T4-TwI" eventType="touchUpInside" id="7Qw-1Y-2NE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hu0-Rq-p46">
+                                <rect key="frame" x="107" y="246" width="200" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GPp-lY-4Sw"/>
+                                    <constraint firstAttribute="height" constant="70" id="foJ-mW-5tT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Workout(ABS)"/>
+                                <connections>
+                                    <action selector="workoutAbsButtonAction:" destination="PHI-T4-TwI" eventType="touchUpInside" id="KDe-Zi-wFb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYJ-8c-suU">
+                                <rect key="frame" x="107" y="360" width="200" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TYY-iv-Fg9"/>
+                                    <constraint firstAttribute="height" constant="70" id="m3d-rW-6m5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Report(Timeline)"/>
+                                <connections>
+                                    <action selector="reportTimelineButtonAction:" destination="PHI-T4-TwI" eventType="touchUpInside" id="raq-71-HvJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uz2-hh-7xF">
+                                <rect key="frame" x="107" y="474" width="200" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="58B-ob-Awr"/>
+                                    <constraint firstAttribute="width" constant="200" id="cRp-Uv-1v5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Report(Activity)"/>
+                                <connections>
+                                    <action selector="reportActivityButtonAction:" destination="PHI-T4-TwI" eventType="touchUpInside" id="PeT-WV-Png"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hu0-Rq-p46" firstAttribute="top" secondItem="fex-VO-fqv" secondAttribute="bottom" constant="44" id="4zC-hH-pZe"/>
+                            <constraint firstItem="uz2-hh-7xF" firstAttribute="top" secondItem="FYJ-8c-suU" secondAttribute="bottom" constant="44" id="MiH-fY-Us7"/>
+                            <constraint firstItem="uz2-hh-7xF" firstAttribute="centerX" secondItem="Aaf-JJ-ARf" secondAttribute="centerX" id="X8B-RG-44U"/>
+                            <constraint firstItem="hu0-Rq-p46" firstAttribute="centerX" secondItem="Aaf-JJ-ARf" secondAttribute="centerX" id="gXy-lD-b7Z"/>
+                            <constraint firstItem="FYJ-8c-suU" firstAttribute="top" secondItem="hu0-Rq-p46" secondAttribute="bottom" constant="44" id="jQW-JM-ZGT"/>
+                            <constraint firstItem="FYJ-8c-suU" firstAttribute="centerX" secondItem="Aaf-JJ-ARf" secondAttribute="centerX" id="mko-Vh-jDK"/>
+                            <constraint firstItem="fex-VO-fqv" firstAttribute="centerX" secondItem="Aaf-JJ-ARf" secondAttribute="centerX" id="n4d-d4-TQW"/>
+                            <constraint firstItem="fex-VO-fqv" firstAttribute="top" secondItem="EIn-kz-Eif" secondAttribute="top" constant="44" id="sR9-oS-QS3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EIn-kz-Eif"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NGG-36-FxU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fRx-sS-AHc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="139.95535714285714"/>
+        </scene>
+    </scenes>
+</document>

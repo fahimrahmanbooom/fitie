@@ -1,0 +1,6 @@
+framework module Pods_Fitie {
+  umbrella header "Pods-Fitie-umbrella.h"
+
+  export *
+  module * { export * }
+}

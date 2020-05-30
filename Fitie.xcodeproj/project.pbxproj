@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31663428C41B2E841C327172 /* Pods_Fitie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CDC80D179EF55C7C3C69261 /* Pods_Fitie.framework */; };
 		FF2F39CF2467A3910029EC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F39CE2467A3910029EC6F /* AppDelegate.swift */; };
 		FF2F39D12467A3910029EC6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F39D02467A3910029EC6F /* SceneDelegate.swift */; };
 		FF2F39D32467A3910029EC6F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F39D22467A3910029EC6F /* AboutUsViewController.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3378222D40D432E16B26D410 /* Pods-Fitie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitie.release.xcconfig"; path = "Target Support Files/Pods-Fitie/Pods-Fitie.release.xcconfig"; sourceTree = "<group>"; };
+		5CDC80D179EF55C7C3C69261 /* Pods_Fitie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B7D5CAD7E01C56968F4A59B /* Pods-Fitie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitie.debug.xcconfig"; path = "Target Support Files/Pods-Fitie/Pods-Fitie.debug.xcconfig"; sourceTree = "<group>"; };
 		FF2F39CB2467A3910029EC6F /* Fitie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2F39CE2467A3910029EC6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF2F39D02467A3910029EC6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,17 +57,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31663428C41B2E841C327172 /* Pods_Fitie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80269F30358165DB3B4DBF2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B7D5CAD7E01C56968F4A59B /* Pods-Fitie.debug.xcconfig */,
+				3378222D40D432E16B26D410 /* Pods-Fitie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD8FB1F8B5955CB067992F2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CDC80D179EF55C7C3C69261 /* Pods_Fitie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF2F39C22467A3910029EC6F = {
 			isa = PBXGroup;
 			children = (
 				FF2F39CD2467A3910029EC6F /* Fitie */,
 				FF2F39CC2467A3910029EC6F /* Products */,
+				80269F30358165DB3B4DBF2A /* Pods */,
+				CD8FB1F8B5955CB067992F2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF2F39DF2467A3920029EC6F /* Build configuration list for PBXNativeTarget "Fitie" */;
 			buildPhases = (
+				E570466396BEBB1A9501F706 /* [CP] Check Pods Manifest.lock */,
 				FF2F39C72467A3910029EC6F /* Sources */,
 				FF2F39C82467A3910029EC6F /* Frameworks */,
 				FF2F39C92467A3910029EC6F /* Resources */,
+				87AB204966DC9EDE2D596144 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +267,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87AB204966DC9EDE2D596144 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitie/Pods-Fitie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitie/Pods-Fitie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitie/Pods-Fitie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E570466396BEBB1A9501F706 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF2F39C72467A3910029EC6F /* Sources */ = {
@@ -398,12 +466,13 @@
 		};
 		FF2F39E02467A3920029EC6F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B7D5CAD7E01C56968F4A59B /* Pods-Fitie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R975Y8X2C9;
 				INFOPLIST_FILE = Fitie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -417,12 +486,13 @@
 		};
 		FF2F39E12467A3920029EC6F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3378222D40D432E16B26D410 /* Pods-Fitie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R975Y8X2C9;
 				INFOPLIST_FILE = Fitie/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
